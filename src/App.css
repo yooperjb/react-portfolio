@@ -3,6 +3,34 @@
   padding: 0;
 }
 
+header {
+  height: 100px;
+  background-color: pink;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+}
+
+header h1 {
+  margin-left: 50px;
+}
+
+.nav-list {
+  margin-right: 50px;
+  list-style-type: none;
+  display: flex;
+  /* align-items: flex-start; */
+  flex-direction: row;
+  justify-content: space-between;
+  border: 1px solid red;
+}
+
+.nav-list li {
+  margin: 20px;
+}
+
 .App {
   text-align: center;
   border: 2px solid red;
@@ -25,8 +53,8 @@ section {
 .App-logo {
   height: 40vmin;
   pointer-events: none;
+  border: 2px solid pink;
 }
-
 
 
 @media (prefers-reduced-motion: no-preference) {

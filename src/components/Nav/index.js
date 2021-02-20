@@ -6,11 +6,14 @@ const Nav = () => {
     }
     return (
         <header>
+            <div>
             <h1>
                 Jason Barnes
             </h1>
+            </div>
+            <div>
             <nav>
-                <ul>
+                <ul className="nav-list">
                     <li onClick={() => menuSelected("About")}>
                         About
                     </li>
@@ -25,6 +28,7 @@ const Nav = () => {
                     </li>
                 </ul>
             </nav>
+            </div>
         </header>
     )
 };
