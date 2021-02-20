@@ -1,8 +1,8 @@
 import React from 'react';
 
 const Nav = () => {
-    const menuSelected = () => {
-        console.log("hello");
+    const menuSelected = (name) => {
+        console.log(`${name} clicked`);
     }
     return (
         <header>
@@ -11,16 +11,16 @@ const Nav = () => {
             </h1>
             <nav>
                 <ul>
-                    <li onClick={menuSelected}>
+                    <li onClick={() => menuSelected("About")}>
                         About
                     </li>
-                    <li onClick={menuSelected}>
+                    <li onClick={() => menuSelected("Portfolio")}>
                         Portfolio
                     </li>
-                    <li onClick={menuSelected}>
+                    <li onClick={() => menuSelected("Contact")}>
                         Contact
                     </li>
-                    <li onClick={menuSelected}>
+                    <li onClick={() => menuSelected("Resume")}>
                         Resume
                     </li>
                 </ul>
