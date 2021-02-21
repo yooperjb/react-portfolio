@@ -4,7 +4,7 @@ import aboutPic from "../../assets/images/profile.jpg";
 const About = () => {
     return (
         <section>
-            <h1 id='about'>About me</h1>
+            <h1>About me</h1>
             <img src={aboutPic} className="profile-photo" style={{ width: "100%"}} alt="Profile Photo" />
             <p>I was born and raised in a small town in south-western Michigan. After high school I traveled around a bit and fell in love with traveling and taking photographs. Soon after I started the photography program at Northern Michigan University and received my Bachelor of Fine Arts in 2002.
             </p>

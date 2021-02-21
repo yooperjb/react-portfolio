@@ -1,9 +1,14 @@
-import React from 'react';
+import React, { useState } from 'react';
 
-const Nav = () => {
-    const menuSelected = (name) => {
-        console.log(`${name} clicked`);
-    }
+const Nav = (props) => {
+    
+    // destructure props
+    const {
+        menuItems = [],
+        currentPage,
+        setCurrentPage
+    } = props;
+    
     return (
         <header>
             <div>
@@ -14,18 +19,14 @@ const Nav = () => {
             <div>
             <nav>
                 <ul className="nav-list">
-                    <li onClick={() => menuSelected("About")}>
-                        About
-                    </li>
-                    <li onClick={() => menuSelected("Portfolio")}>
-                        Portfolio
-                    </li>
-                    <li onClick={() => menuSelected("Contact")}>
-                        Contact
-                    </li>
-                    <li onClick={() => menuSelected("Resume")}>
-                        Resume
-                    </li>
+                    
+                    {menuItems.map((menu) => (
+                       <li 
+                       className={`${currentPage === menu && 'navActive'}`} onClick={() => setCurrentPage(menu)}>
+                        {menu}
+                    </li> 
+                    ))}
+                    
                 </ul>
             </nav>
             </div>

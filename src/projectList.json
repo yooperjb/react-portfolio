@@ -1,0 +1,43 @@
+[{
+    "name": "Adventure Series", 
+    "desc": "Node/MySQL",
+    "image": "adventure_series.jpg",
+    "deploy": "https://damp-anchorage-73357.herokuapp.com/",
+    "repo": "https://github.com/yooperjb/Redwood-Adventure-Cycling"
+  },
+  {
+    "name": "Living Room",
+    "desc": "JavaScript/HTML",
+    "image": "living_room.jpg",
+    "deploy": "https://yooperjb.github.io/Living-Room/",
+    "repo": "https://github.com/yooperjb/Living-Room"
+  },
+  {
+    "name": "Del Norte LAFCo",
+    "desc": "Wordpress",
+    "image": "delnorte_lafco.png",
+    "deploy": "https://www.delnortelafco.org/",
+    "repo": "https://github.com/yooperjb"
+  },
+  {
+    "name": "Trinity LAFCo",
+    "desc": "Wordpress",
+    "image": "trinity_lafco.png",
+    "deploy": "https://www.trinitylafco.org/",
+    "repo": "https://github.com/yooperjb"
+  },
+  {
+    "name": "Planwest Partners",
+    "desc": "Wordpress",
+    "image": "planwest.png",
+    "deploy": "http://planwestpartners.com/",
+    "repo": "https://github.com/yooperjb"
+  },
+  {
+    "name": "Humboldt LAFCo",
+    "desc": "Wordpress",
+    "image": "Humboldt_lafco.png",
+    "deploy": "https://humboldtlafco.org/",
+    "repo": "https://github.com/yooperjb"
+  }
+  ]
