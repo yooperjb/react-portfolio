@@ -31,8 +31,8 @@ header h1 {
 
 .nav-list li {
   margin: 20px;
-  /* cursor: pointer; */
-  cursor: grabbing;
+  cursor: pointer;
+  /* cursor: grabbing; */
 }
 
 .navActive {
@@ -76,15 +76,15 @@ section p {
   display: flex;
   justify-content: center;
   align-items: center;
-  /* opacity: 1; */
-  /* transition: opacity .5s ease-in-out; */
-}
-
-.projectCard img {
-  width: 100%;
-  height: 100%;
   opacity: 1;
   transition: opacity .5s ease-in-out;
+}
+
+.projectCard .projectBackground {
+  width: 100%;
+  height: 100%;
+  /* opacity: 1; */
+  transition: opacity .75s ease-in-out;
   position: absolute;
 }
 
@@ -93,26 +93,28 @@ section p {
   padding: 5px;
   position: absolute;
   /* bottom: 0px; */
-  background-color: gray;
+  /* background-color: gray; */
   opacity: 0;
   z-index: 50;
   transition: opacity .5s ease-in-out;
 }
-.projectCard img:hover {
+
+.projectLinks {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+.projectLinks .projectLogo {
+  height: 24px;
+  margin: 2px 10px 0px;
+}
+
+.projectCard:hover .projectBackground {
   opacity: .2;
 }
-
-.projectText:hover {
+.projectCard:hover .projectText {
   opacity: 1;
-}
-
-@keyframes fade-out {
-  0% {
-    opacity: 1;
-  }
-  100% {
-    opacity: 0;
-  }
 }
 
 .projectText p {
