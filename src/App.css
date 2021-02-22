@@ -2,6 +2,9 @@
   margin: 0;
   padding: 0;
 }
+body {
+  background-color: var(--section-bg-color);
+}
 
 :root {
   --section-bg-color: #99aed1;
@@ -32,7 +35,6 @@ header h1 {
 .nav-list li {
   margin: 20px;
   cursor: pointer;
-  /* cursor: grabbing; */
 }
 
 .navActive {
@@ -51,10 +53,19 @@ section p {
   margin: 12px auto;
   line-height: 1.4em;
 }
+
+p a {
+  text-decoration: none;
+  color: rgb(3, 8, 77);
+}
+
+p a:hover {
+  text-shadow: 2px 2px 5px #d8caca;
+}
+
 .profile-photo {
   height: auto;
   max-width: 120px;
-  /* padding: 4px; */
   border-radius: 50%;
   margin: 10px 0;
   border: 2px solid black;
@@ -83,17 +94,13 @@ section p {
 .projectCard .projectBackground {
   width: 100%;
   height: 100%;
-  /* opacity: 1; */
   transition: opacity .75s ease-in-out;
   position: absolute;
 }
 
 .projectText {
-  /* margin: 10px auto; */
   padding: 5px;
   position: absolute;
-  /* bottom: 0px; */
-  /* background-color: gray; */
   opacity: 0;
   z-index: 50;
   transition: opacity .5s ease-in-out;
@@ -145,6 +152,25 @@ section p {
   width: 100%;
 }
 
+#contact-form button {
+  margin: 8px 0px;
+  padding: 0.35em 1.2em;
+  border: 0.1em solid #000000;
+  border-radius:0.12em;
+  box-sizing: border-box;
+  font-family:'Roboto',sans-serif;
+  font-weight:300;
+  color:#FFFFFF;
+  text-align:center;
+  transition: all 0.2s;
+  background-color: var(--section-bg-color);
+}
+
+#contact-form button:hover {
+  color:#000000;
+  background-color:#FFFFFF;
+}
+
 .error-text {
   color: rgb(129, 0, 0);
   font-style: italic;
@@ -152,7 +178,14 @@ section p {
 }
 /* --------- end contact form styles --------- */
 
-.App {
+/* --------- resume styles --------- */
+
+.resumeList {
+  list-style-type: disc;
+  list-style: inside;
+  margin: 5px 5px 10px;
+}
+/* .App {
   text-align: center;
   border: 2px solid red;
 }
@@ -161,7 +194,7 @@ section p {
   height: 40vmin;
   pointer-events: none;
   border: 2px solid pink;
-}
+} */
 
 @media (prefers-reduced-motion: no-preference) {
   .App-logo {
@@ -169,7 +202,7 @@ section p {
   }
 }
 
-.App-header {
+/* .App-header {
   background-color: #282c34;
   min-height: 100vh;
   display: flex;
@@ -179,11 +212,11 @@ section p {
   font-size: calc(10px + 2vmin);
   color: white;
   border: 2px solid pink;
-}
+} */
 
-.App-link {
+/* .App-link {
   color: #61dafb;
-}
+} */
 
 /* --------- footer styles --------- */
 footer {
