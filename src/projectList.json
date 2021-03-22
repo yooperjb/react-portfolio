@@ -39,5 +39,12 @@
     "image": "Humboldt_lafco.png",
     "deploy": "https://humboldtlafco.org/",
     "repo": "https://github.com/yooperjb"
+  },
+  {
+    "name": "MustFit Pets",
+    "desc": "MERN",
+    "image":"mustfit_pets.jpg",
+    "deploy":"https://quiet-refuge-60774.herokuapp.com/",
+    "repo":"https://github.com/calistamayer/pet-adoption"
   }
   ]
